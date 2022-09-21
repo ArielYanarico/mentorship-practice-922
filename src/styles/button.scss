@@ -1,0 +1,41 @@
+.button {
+  padding: 10px 25px;
+  border-radius: $button-radius;
+  background-color: $light-highlight;
+  margin: 14px;
+  position: relative;
+  color: $dark-highlight;
+  border: 2px solid $dark-highlight;
+  overflow: hidden;
+  text-decoration: none;
+  cursor: pointer;
+  font-family: $main-font;
+  font-size: 14px;
+
+  // Button animation
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    color: $light-highlight;
+    background-color: $dark-highlight ;
+  }
+
+  &.no-highlight {
+    &:hover {
+      color: $dark-highlight !important;
+      background-color: $light-highlight !important;
+    }
+  }
+
+  &.dark {
+    background-color: $dark-highlight;
+    color: $light-highlight;
+
+    &:hover {
+      color: $dark-highlight;
+      background-color: $light-highlight;
+    }
+  }
+}
